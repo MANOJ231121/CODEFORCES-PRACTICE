@@ -40,27 +40,33 @@ int main()
 
     int count = 0;
 
-    for (int i = 0; i <= l.size()-1; i++)
+    for (int i = 0; i < l.size(); i++)
     {
-        for (int j = 0; j < l.size(); j++)
+        bool found = false;
+        for (int j = 0; j < i; j++)
         {
+            
             if (l[i] == l[j])
             {
+                found = true;
 
-                count++;
+               break;
                 
             }
         }
+        if(!found){
+            count++;
+        }
     }
-    cout<<count<<endl;
-    // if (count % 2 == 0)
-    // {
-    //     cout << "CHAT WITH HER!" << endl;
-    // }
-    // else
-    // {
-    //     cout << "IGNORE HIM" << endl;
-    // }
+    // cout<<count<<endl;
+    if (count % 2 == 0)
+    {
+        cout << "CHAT WITH HER!" << endl;
+    }
+    else
+    {
+        cout << "IGNORE HIM!" << endl;
+    }
 
         return 0;
     }

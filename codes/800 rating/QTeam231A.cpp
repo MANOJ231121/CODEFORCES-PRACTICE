@@ -21,17 +21,28 @@
 // 1 0 0
 // 0 1 1
 
-
+#include<vector>
 #include<iostream>
 using namespace std;
 int main(){
-    int n;    //n of problem in contest
-    cin>>n;
-    int player = 3;
-    int r1 ;
-    cin >>r1;
-    for (int i =0;i<n;i++){
-        cout<<r1<<endl;
+    int n=3;
+    // cin>>n;
+    int count=0;
+    vector<vector<int>> array(n, vector<int>(3));
+    for (int i = 0; i < n; i++)
+    {
+       for (int j = 0; j < 3; j++)
+       {
+         cin >> array[i][j];
+         
+        }
+        if((array[i][0]+array[i][1]+array[i][2])>=2){
+            count++;
+       
+       }
     }
+    cout<<count;
+
+    
     return 0;
 }
