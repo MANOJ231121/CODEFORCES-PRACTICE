@@ -21,7 +21,7 @@ Problems are organized by their difficulty (rating). Each solution includes the 
 
 | Rating | Solved |
 | ------ | ------ |
-| 800    | 9      |
+| 800    | 17      |
 | 900    | 0      |
 | 1000   | 0      |
 | 1100+  | 0      |
