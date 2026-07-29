@@ -21,9 +21,9 @@ Problems are organized by their difficulty (rating). Each solution includes the 
 
 | Rating | Solved |
 | ------ | ------ |
-| 800    | 17      |
+| 800    | 20     |
 | 900    | 0      |
-| 1000   | 0      |
+| 1000   | 02     |
 | 1100+  | 0      |
 
 > This table will be updated as I solve more problems.
