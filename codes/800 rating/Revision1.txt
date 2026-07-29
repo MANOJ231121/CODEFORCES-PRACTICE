@@ -1,0 +1,50 @@
+watermelon 4/a
+ in this we need to check whether the divison happened is even or not 
+ if(n%2 ==0) && (n>=2)
+cout<<"yes"<<endl;
+
+
+
+ way to long 71/a
+ int this question we need to count no words betweeen a ten long word except 1 and last string like localisation output will bw l10n
+ first we take the input of how many words we need to take then using loop we enter the string then we use condition if string size is greater than 10 if yes then we inc 
+ the count and print the output if not then  we print the word 
+ NOTE:  make sure to use the int count inside the loop because count need to be reset if this does not happen then it will create issue
+
+
+ Team Q231/a
+ this is the question in which we need to take input of the number of ques and then we check if the attempt  done by the 3 student if ans given is greater than 2 then 
+ we count 
+  if( array[i][0]+ array[i][1]+array[i][2]>=2){}
+                count++;
+just remember the main logic that how  we calculate if  answer is greater of equal to 2
+ 
+
+Bit++Q282/a
+this ques consist of pre inc and post increament of number just take how many input u need to take its easy but here we just need to inc the and decrease if ++ and -- is present
+for(int i=0;i<a;i++){}
+        cin>>b;
+        if (b=="x++")
+        {}
+            /* code */
+          x++;
+
+
+Next round Q158/a
+we just need to take 2 value n and k and n is array andk is the value and i need to count the number of element before n.
+just do cin>> n and k
+then make an array in which hold the value of n then use a loop from j=0 to k-1
+k-1 because array start from 0 and if we use k then it will take wrong value
+for(int j=0; j< n;j++){
+    if(array[j]>=arra[k-1] && array[j]>=0)
+}
+
+
+Domino piling Q50/A
+just do m*n /2*1
+we just need to make sure that how many blocks can we covered in2*1 using  block m*n;
+
+Petya and Strings Q112a
+
+
+
