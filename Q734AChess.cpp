@@ -10,7 +10,7 @@ int main(){
     int count2=0;
     n == s.size();
     for (int i = 0; i < s.size(); i++)
-    {
+    {`  
         s[i]=toupper(s[i]);
         if (s[i]=='A')
         {
