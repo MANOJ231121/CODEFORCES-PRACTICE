@@ -21,7 +21,6 @@
 // Note that all lucky numbers are almost lucky as any number is evenly divisible by itself.
 // In the first sample 47 is a lucky number. In the second sample 16 is divisible by 4.
 
-
 // #include <string>
 // #include<iostream>
 // using namespace std;
@@ -45,37 +44,39 @@
 //     {
 //         /* code */
 //     }
-    
-        
+
 //         else{
 //             cout<<"NO"<<endl;
 //             break;
 
 //         }
-    
+
 //     return 0;
 // }
 
-
-#include<set>
-#include<string>
-#include<iostream>
+#include <set>
+#include <string>
+#include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int n;
-    cin>>n;
+    cin >> n;
     string s;
     s = to_string(n);
-    set <char>st(s.begin(), s.end());
-        if((st.count('4') && st.count('7')) ){
-    cout << "YES"<<endl;
-}
-else if(n%4 == 0){
-    cout<<"YES"<<endl;
-}
-else{
-    cout<<"NO"<<endl;
-}
- 
+    set<char> st(s.begin(), s.end());
+    if ((st.count('4') && st.count('7')))
+    {
+        cout << "YES" << endl;
+    }
+    else if ((n % 4 == 0) || (n % 7 == 0) || (n % 47 == 0))
+    {
+        cout << "YES" << endl;
+    }
+    else
+    {
+        cout << "NO" << endl;
+    }
+
     return 0;
 }
