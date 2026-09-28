@@ -7,13 +7,9 @@ int main(){
     {
         int n;
         cin>>n;
-        if((n %3 != 0) && (n%10 != 3)){
-            cout<<n<<endl;
+        if(n % 3== 0 ||  n%10 ==3){
+            n = n+1;
         }
-        else if((n%3 == 0)&& (n%10 ==3)){
-            n++;   
-            cout<<n<<endl;
-            }
         }    
     return 0;
 }
