@@ -1,38 +1,43 @@
-// Valera the Horse is going to the party with friends. He has been following the fashion trends for a while, and he knows that it is very popular to wear all horseshoes of different color. Valera has got four horseshoes left from the last year, but maybe some of them have the same color. In this case he needs to go to the store and buy some few more horseshoes, not to lose face in front of his stylish comrades.
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     vector<long> horse(4);
+//     for(int i =0;i< 4;i++){
+//         cin>>horse[i];
+//     }
+//     int left =0;
+//     int right =left+1;
+//     int count =0;
+//     sort(horse.begin(),horse.end());
+//     while(left < horse.size()){
+//         if(horse[left] == horse[right]){
+//             count ++;
+//             right++;
+//         }
+//         else{
+//             right++;
+//         }
+//         left++;
+//     }
+//     cout<<count<<endl;
 
-// Fortunately, the store sells horseshoes of all colors under the sun and Valera has enough money to buy any four of them. However, in order to save the money, he would like to spend as little money as possible, so you need to help Valera and determine what is the minimum number of horseshoes he needs to buy to wear four horseshoes of different colors to a party.
 
-// Input
-// The first line contains four space-separated integers s1, s2, s3, s4 (1 ≤ s1, s2, s3, s4 ≤ 109) — the colors of horseshoes Valera has.
-
-// Consider all possible colors indexed with integers.
-
-// Output
-// Print a single integer — the minimum number of horseshoes Valera needs to buy.
-
-// 1 7 3 3
-// 1
-
-#include<vector>
-#include<iostream>
+//     return 0;
+// }
+#include <bits/stdc++.h>
 using namespace std;
 int main(){
-    vector<int>arr(4);
-     for (int i = 0; i <= arr.size(); i++)
-     {
+    vector<long> arr(4);
+    set <long> s;
+    for (int i = 0; i < 4; i++)
+    {
         cin>>arr[i];
-        for (int j = 0; j< arr.size()-i-1; j++)
-        {
-            if(arr[i] > arr[j+1]){
-                swap(arr[i],arr[j+1]);
-            }
-            else{
-                break;
-            }
-
-     }
-     }
-    
+        /* code */
+    }
+    for(int i =0; i<4;i++){
+    s.insert(arr[i]);
+    }
+    cout<<4-s.size()<<endl;
     
     return 0;
 }
